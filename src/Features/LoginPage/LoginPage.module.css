@@ -1,0 +1,208 @@
+.container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form {
+    margin-top: 1rem;
+  }
+  /* new styles  */
+
+  /* General Reset */
+.body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 20px;
+}
+
+.p {
+  margin: 0 0 15px;
+  color: #666;
+}
+
+.a {
+  text-decoration: none;
+  color: #fb771a;
+  transition: color 0.3s ease;
+}
+
+.a:hover {
+  color: #e66c00; /* Darkened fb771a */
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Login Page */
+.half {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  min-height: 100vh;
+  background: #f6f7fc;
+}
+
+.bg {
+  width: 20%;
+  /* height: 100%; Ensure the element covers its parent height */
+  background-image: url('/assets/images/onboard.png');
+  background-size: cover; /* Adjust the image to cover the area proportionally */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+}
+
+/* .bg {
+  width: 20%;
+  background-image: url('/assets/images/onboard.png');
+  background-size: auto 100%;
+  background-position: center;
+} */
+
+.contents {
+  width: 75%;
+  background: #f6f7fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Block */
+.formBlock {
+  background: #fff;
+  padding: 40px;
+  max-width: 500px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.formBlock h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form Group */
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Form Control */
+.form-control {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+  background: #f6f7fc;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  background: #fff;
+  border-color: #fb771a;
+  outline: none;
+  box-shadow: 0 0 5px rgba(251, 119, 26, 0.2);
+}
+
+.form-control::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Buttons */
+.btnPrimary {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background: #fb771a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background: #e66c00; /* Darkened fb771a */
+  transform: translateY(-2px);
+}
+
+.btnPrimary:active {
+  background: #ffa04d; /* Lightened fb771a */
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Forgot Password */
+.forgotPass {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.forgotPass a {
+  color: #fb771a;
+  text-decoration: underline;
+}
+
+.forgotPass a:hover {
+  color: #e66c00; /* Darkened fb771a */
+}
+
+/* Error Messages */
+.errorMessage {
+  font-size: 13px;
+  color: #e74c3c;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contents {
+    width: 100%;
+  }
+
+  .formBlock {
+    padding: 20px;
+  }
+
+  .btnPrimary {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .form-control {
+    padding: 12px;
+  }
+}
