@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import styles from "./LoginPage.module.css"; // Import CSS module
 import { useRouter } from "next/router";
@@ -25,6 +26,7 @@ const LoginPages = () => {
       setErrors(validationErrors);
     } else {
       setErrors({});
+      // Perform login logic here
       console.log("Login successful");
       router.push("/dashboard"); // Redirect on successful login
     }
@@ -42,7 +44,7 @@ const LoginPages = () => {
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-12">
-              <div className={`${styles.formBlock} mx-auto`}>
+              <div className={`${styles.formBlock} mx-auto `}>
                 <div className="text-center mb-5">
                   <img src="/assets/images/LoginLogo.png" alt="logo" className="mx-auto mb-3" />
 
