@@ -1,6 +1,5 @@
-
 import React, { useState } from "react";
-import styles from "./LoginPage.module.css";
+import styles from "./LoginPage.module.css"; // Import CSS module
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -26,7 +25,6 @@ const LoginPages = () => {
       setErrors(validationErrors);
     } else {
       setErrors({});
-      // Perform login logic here
       console.log("Login successful");
       router.push("/dashboard"); // Redirect on successful login
     }
