@@ -1,9 +1,7 @@
-
 import React, { useState } from "react";
 import styles from "../LoginPage/LoginPage.module.css"; // Import CSS module
 import { useRouter } from "next/router";
 import Link from "next/link";
-
 
 export default function RegisterPages() {
   const [username, setUsername] = useState("");
@@ -12,7 +10,6 @@ export default function RegisterPages() {
   const [referalCode, setReferalCode] = useState("");
   const [errors, setErrors] = useState({});
   const router = useRouter();
-
   const validateForm = () => {
     const errors = {};
     if (!username) errors.username = "Email is required.";
@@ -100,14 +97,11 @@ export default function RegisterPages() {
                     />
                     {errors.referalCode && <div className={styles.errorMessage}>{errors.referalCode}</div>}
                   </div>
-
-
                   <div className="col-md-12 text-center">
                     <button type="submit" className={styles.CustomBtn + " py-2 col-12"} style={{ padding: "1rem" }}>
                       Register
                     </button>
                   </div>
-
                   <div className="d-flex m-3 justify-content-center align-items-center">
                     <span className="ml-auto text-gray "> Already have an account? </span>                    
                     <Link href="/login" className=" text-decoration-none py-2 ms-2 text-primary fw-bold">
@@ -123,7 +117,6 @@ export default function RegisterPages() {
     </div>
   );
 }
-
 // // old working code
 // import { handleRegister } from './registerUtils';
 // import styles from './RegisterPage.module.css';
