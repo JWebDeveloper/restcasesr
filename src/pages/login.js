@@ -1,6 +1,6 @@
-import LoginPage from '../Features/LoginPage/LoginPage';
+import LoginPages from '../Features/LoginPage/LoginPages';
 export default function Login() {
   return <>
-    <LoginPage />;
+    <LoginPages />
   </>
 }

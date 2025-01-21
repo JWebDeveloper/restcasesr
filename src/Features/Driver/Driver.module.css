@@ -1,0 +1,136 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .newDriverBtn,
+  .exportListBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0374b6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newDriverBtn:hover,
+  .exportListBtn:hover {
+    background-color: #024972;
+  }
+  
+  .icon {
+    font-size: 1rem;
+  }
+  
+  .filterSection {
+    background-color: #cee1f5;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fieldsRow {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .inputField {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputField:focus {
+    border-color: #024972;
+  }
+  
+  .clearSearch {
+    font-size: 0.9rem;
+    color: #024972;
+    cursor: pointer;
+  }
+  
+  .clearSearch:hover {
+    text-decoration: underline;
+  }
+  
+  .expandBtn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #024972;
+    background-color: transparent;
+    border: 1px solid #024972;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .expandBtn:hover {
+    background-color: #024972;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .fieldsRow {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .inputField {
+      min-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.2rem;
+    }
+  
+    .newDriverBtn,
+    .exportListBtn {
+      font-size: 0.85rem;
+      padding: 6px 10px;
+    }
+  
+    .inputField {
+      font-size: 0.85rem;
+    }
+  
+    .expandBtn {
+      font-size: 0.85rem;
+      padding: 6px 10px;
+    }
+  }
+  
