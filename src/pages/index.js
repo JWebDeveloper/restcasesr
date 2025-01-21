@@ -12,11 +12,3 @@ export default function Home() {
   return null
 }
 
-// // old working code
-// import LoginPage from '../Features/LoginPage/LoginPage';
-
-// export default function Home() {
-//   return <>
-//   <LoginPage />;
-// </>
-// }

@@ -1,7 +1,7 @@
-import RegisterPages from '../Features/RegisterPage/RegisterPages';
+import RegisterPages2 from '../Features/ResiterStep2/RegisterPageStep2';
 
-export default function Register() {
-  return <RegisterPages />;
+export default function RegisterStep2() {
+  return <RegisterPages2 />;
 }
 // export default function Register() {
 //     return (

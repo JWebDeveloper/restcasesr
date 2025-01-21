@@ -1,3 +1,25 @@
+.responsiveText {
+  font-size: 0.81rem;  
+}
+
+@media (min-width: 768px) {
+  .responsiveText {
+    font-size: 1rem;  
+  }
+}
+
+@media (min-width: 992px) {
+  .responsiveText {
+    font-size: 1.25rem;  
+  }
+}
+
+@media (min-width: 1200px) {
+  .responsiveText {
+    font-size: 1.4rem;  
+  }
+}
+
 .CustomBtn {
   display: block;
   width: 100%;

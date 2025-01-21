@@ -1,0 +1,400 @@
+  .responsiveText {
+    font-size: 0.81rem;  
+  }
+  
+  @media (min-width: 768px) {
+    .responsiveText {
+      font-size: 1rem;  
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .responsiveText {
+      font-size: 1.25rem;  
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .responsiveText {
+      font-size: 1.4rem;  
+    }
+  }
+  
+  .CustomBtn {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  
+    padding: 1rem !important;
+    background-color: #305c89;
+    border-color: #305c89;
+    color: white;
+  }
+  
+  .watermarked {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .watermarked img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .watermarked:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(45, 63, 123, 0.6) 20%) repeat 0 0;
+    z-index: 1;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form {
+    margin-top: 1rem;
+  }
+  
+  .body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .half {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    min-height: 120vh;
+    /* background: #f6f7fc; */
+  }
+  
+  .bg {
+    width: 20%;
+    /* height: 100%; Ensure the element covers its parent height */
+    background-image: url('/assets/images/onboard.png');
+    background-size: cover;
+    /* Adjust the image to cover the area proportionally */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-position: center;
+    /* Center the image */
+  }
+  
+  .contents {
+    width: 75%;
+    /* background: #bfc6eb; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Form Block */
+  .formBlock {
+    /* background: #fff; */
+    padding: 40px;
+    max-width: 500px;
+    /* box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2); */
+    /* border-radius: 8px; */
+  }
+  
+  .formBlock h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Form Group */
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Form Control */
+  .form-control {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+    background: #f6f7fc;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(251, 119, 26, 0.2);
+  }
+  
+  .form-control::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  .forgotPass {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  .forgotPass a {
+    color: #fb771a;
+    text-decoration: underline;
+  }
+  
+  .forgotPass a:hover {
+    color: #e66c00;
+    /* Darkened fb771a */
+  }
+  
+  /* Error Messages */
+  .errorMessage {
+    font-size: 13px;
+    color: #e74c3c;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contents {
+      width: 100%;
+    }
+  
+    .formBlock {
+      padding: 20px;
+    }
+  
+    .form-control {
+      padding: 12px;
+    }
+  }
+  /* // old working style
+  .container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form {
+    margin-top: 1rem;
+  }
+  
+  .body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  }
+  
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 20px;
+  }
+  
+  .p {
+  margin: 0 0 15px;
+  color: #666;
+  }
+  
+  .a {
+  text-decoration: none;
+  color: #fb771a;
+  transition: color 0.3s ease;
+  }
+  
+  .a:hover {
+  color: #e66c00;  
+  }
+  
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+  
+  .half {
+  
+  min-height: 100vh;
+  background: #f6f7fc;
+  }
+  
+  .bg {
+  width: 20%;
+  background-image: url('/assets/images/onboard.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  }
+  
+   
+  
+  .contents {
+  width: 75%;
+  background: #f6f7fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+   
+  .formBlock {
+  background: #fff;
+  padding: 40px;
+  max-width: 500px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  }
+  
+  .formBlock h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  }
+  
+   
+  .formGroup {
+  margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+  font-size: 14px;
+  color: #888;
+  }
+  
+   
+  .form-control {
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+  background: #f6f7fc;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+  background: #fff;
+  border-color: #fb771a;
+  outline: none;
+  box-shadow: 0 0 5px rgba(251, 119, 26, 0.2);
+  }
+  
+  .form-control::placeholder {
+  color: #aaa;
+  font-style: italic;
+  }
+  
+   
+  .btnPrimary {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background: #fb771a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  }
+  
+  .btnPrimary:hover {
+  background: #e66c00;  
+  transform: translateY(-2px);
+  }
+  
+  .btnPrimary:active {
+  background: #ffa04d;  
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forgotPass {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-align: right;
+  }
+  
+  .forgotPass a {
+  color: #fb771a;
+  text-decoration: underline;
+  }
+  
+  .forgotPass a:hover {
+  color: #e66c00;  
+  }
+  
+  .errorMessage {
+  font-size: 13px;
+  color: #e74c3c;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+  .contents {
+    width: 100%;
+  }
+  
+  .formBlock {
+    padding: 20px;
+  }
+  
+  .btnPrimary {
+    font-size: 14px;
+    padding: 12px;
+  }
+  
+  .form-control {
+    padding: 12px;
+  }
+  } */

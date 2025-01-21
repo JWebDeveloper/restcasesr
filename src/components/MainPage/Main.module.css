@@ -1,0 +1,440 @@
+/* Container for the entire right side */
+.right-side-container {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  /* Welcome Section */
+  .welcome-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-text {
+    margin-right: 10px;
+  }
+  
+  .down-arrow {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .divider {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Main Heading */
+  .main-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Main Section */
+  .main-section {
+    margin: 20px;
+  }
+  
+  .trips-text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    gap: 8px;
+  }
+  
+  .create-trips-text {
+    color: #024972;
+  }
+  
+  .arrow-icon {
+    color: #555;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* Trip Details Section */
+  .trip-details label,
+  .customer-details label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .trip-details input,
+  .customer-details input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  /* Step Form Section */
+  .step-form {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .step-form p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  /* Trip Details Section */
+  .trip {
+    background-color: rgba(0, 123, 255, 0.1);
+    padding: 20px;
+  }
+  
+  .trip-details {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #024972;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .input-field::placeholder {
+    color: #024972;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  /* Checkbox and Show Advanced Settings Styling */
+  .additional-settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .checkbox-label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+  }
+  
+  .advanced-settings {
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .down-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .customer-details-row {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #024972;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .contact-field {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .country-code {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .phone-number {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    width: 150px;
+  }
+  
+  .advanced-settings-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .advanced-settings {
+    font-size: 14px;
+    color: #024972;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .advanced-settings .down-arrow {
+    margin-left: 5px;
+  }
+  
+  /* Step Form Section */
+  .step-form-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* Step Navigation */
+  .step-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .step {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #024972;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .step-active {
+    background-color: #024972;
+    color: white;
+    border-color: #024972;
+  }
+  
+  /* Receiver Text Section */
+  .receiver-text {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #024972;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .forward-icon {
+    margin-left: 5px;
+  }
+  
+  .line {
+    flex: 0.2;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 10px;
+  }
+  
+  /* Form Layout */
+  .form-row {
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .col-sm-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #024972;
+    border-radius: 4px;
+    outline: none;
+    
+  }
+  
+  .form-input::placeholder {
+    color: #024972;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .form-input:focus {
+    border-color: #024972;
+    color: #024972;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  .dispatch-section {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .section-right {
+    justify-content: flex-end;
+  }
+/*   
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a0a0a0;
+  } */
+  
+  .blue {
+    color: #024972;
+  }
+  
+  .pickup-details, .delivery-details {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dispatch-details p, .time-details p {
+    font-size: 14px;
+    color: #0c0c0c;
+  }
+  
+  .truck-icon, .trailer-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666;
+    
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .icon-inside-input {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666; 
+  }
+  
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .left-button {
+    background-color: #f3f4f5;
+    color: rgb(22, 22, 22);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .right-button {
+    margin-left: auto;
+    background-color: #f5f6f7;
+    color: rgb(26, 25, 25);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .left-button:hover,
+  .right-button:hover {
+    opacity: 0.9;
+  }
+  .error{
+    color: rgb(169, 1, 1);
+    font-weight: bold;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .right-side-container {
+      padding: 15px;
+    }
+  
+    .welcome-container {
+      font-size: 16px;
+      flex-wrap: wrap;
+      justify-content: flex-start; /* Align the welcome section left */
+    }
+  
+    .main-heading {
+      font-size: 20px; /* Adjust main heading size */
+    }
+  
+    .trip-details {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .additional-settings {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .customer-details-row {
+      flex-direction: column;
+      gap: 20px; /* Stack input fields vertically */
+    }
+  
+    .step-form-container {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .col-sm-4 {
+      max-width: 100%;
+      flex: 1;
+    }
+  
+    .left-button,
+    .right-button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
