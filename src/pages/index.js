@@ -1,7 +1,7 @@
 export async function getServerSideProps() {
   return {
     redirect: {
-      destination: "/login", // Redirects to the `/login` route
+      destination: "/transportDirect", // Redirects to the `/login` route
       permanent: false,      // Marks the redirection as temporary
     },
   };
