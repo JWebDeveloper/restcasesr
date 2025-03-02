@@ -34,7 +34,7 @@ const LoginPages = () => {
 
   return (
     <div className={`${styles.half} d-md-flex`}>
-      <div class={styles.watermarked}>
+      <div className={styles.watermarked}>
         <img src="/assets/images/onboard.png" className="img-fluid" alt="Photo" />
       </div>
       <div className={styles.contents}>
